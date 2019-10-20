@@ -30,9 +30,11 @@ Defaults are 32, 4, and 'softmax', respectively
 ### Running the Code
 
 Run with defaults (this will only run the model once)
+
 \>\>\> ./dementia_dnn.py --debug all
 
 Run with layers [2, 3],  dropouts [0.0, 0.2] and learning_rates [0.1, 0.01, 0.001]
+
 \>\>\> ./dementia_dnn.py --layers 2,3 --dropout 0.0,0.2 --learning_rate 0.1,0.01,0.001 --debug all
 NOTE: This will run the model (2 X 2 X 3) = 12 times.  Notice that if you use multiple values of each hyperparameter in your grid search, the amount of run time adds up quickly!
 
